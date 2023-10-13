@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "tabulator-tables@5.5.2",
+      "destination": "wwwroot/lib/tabulator-tables/",
+      "files": [
+        "dist/js/tabulator.min.js",
+        "dist/js/tabulator.min.js.map",
+        "dist/css/tabulator_bulma.min.css",
+        "dist/css/tabulator_bulma.min.css.map"
+      ]
+    },
+    {
+      "library": "bulma@0.9.4",
+      "destination": "wwwroot/lib/bulma/",
+      "files": [
+        "css/bulma.min.css"
+      ]
+    },
+    {
+      "library": "luxon@3.4.3",
+      "destination": "wwwroot/lib/luxon/",
+      "files": [
+        "build/global/luxon.min.js",
+        "build/global/luxon.min.js.map"
+      ]
+    },
+    {
+      "library": "vue@3.3.4",
+      "destination": "wwwroot/lib/vue/",
+      "files": [
+        "dist/vue.global.js"
+      ]
+    }
+  ]
+}

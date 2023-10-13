@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TabulatorDynamicQueryBuilder</title>
+    <link rel="stylesheet" href="~/lib/bulma/css/bulma.min.css" />
+    <link rel="stylesheet" href="~/lib/tabulator-tables/dist/css/tabulator_bulma.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    TabulatorDynamicQueryBuilder
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" asp-area="" asp-controller="Home" asp-action="Index">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" asp-controller="Home" asp-action="Privacy">
+                        Privacy
+                    </a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                <strong>Sign up</strong>
+                            </a>
+                            <a class="button is-light">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="my-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                &copy; 2023 - <strong>TabulatorDynamicQueryBuilder</strong> - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </p>
+            <p>
+                API used to obtain fake data: <a href="https://randomuser.me/documentation">Random User Generator</a>
+            </p>
+        </div>
+    </footer>
+    <script src="~/lib/vue/dist/vue.global.js"></script>
+    <script src="~/lib/luxon/build/global/luxon.min.js"></script>
+    <script src="~/lib/tabulator-tables/dist/js/tabulator.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
